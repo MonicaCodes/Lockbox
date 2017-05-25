@@ -42,6 +42,10 @@ p {
   min-height: 2px;
   margin:0 2% 20px;
 }
+.macbook {
+  max-width: 857px;
+  width: 100%;
+}
 
 /* HEADER */
 header {
@@ -61,7 +65,7 @@ header nav ul {
 header nav ul > li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px 0 20px;
 }
 header nav ul > li.btn-outline {
   padding: 10px 15px;
@@ -289,7 +293,6 @@ footer {
      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
   color: #FFFFFF;
   height: 150px;
-  position: relative;
   overflow: hidden;
   z-index: 0;
 }
@@ -301,7 +304,7 @@ footer p, footer nav ul {
 }
 footer nav ul li {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
 }
 footer nav ul li a {
   color:#FFFFFF;
@@ -309,14 +312,17 @@ footer nav ul li a {
 }
 footer .right-footer-block {
   background-color: transparent;
+  display: inline-block;
 }
+
+
 footer .logo{
   padding: 2.35em 0;
   margin: 0 auto;
   display: block;
 }
 
-@media(min-width: 991px) {
+@media(min-width: 460px) {
    footer{
      background-color: #3498DB;
      background-image: linear-gradient(to left,
@@ -334,10 +340,40 @@ footer .logo{
      padding: 2.3em 0 2em 1.5em;
    }
  }
+ #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+@media (max-width: 460px) {
+  footer .logo{
+    padding: 10px 0 0 0;
+  }
+  footer .left-footer-block {
+    height: 5px;
+  }
+}
 
 
 
 /* MEDIA QUERIES */
+
+@media (min-width: 460px) {
+  .container {
+    width: auto;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  .one-half ul {
+    display: inline;
+  }
 
 
 
@@ -359,12 +395,12 @@ footer .logo{
   .one-fourth {
     width: 21%;
   }
-}
+
 @media (min-width: 1200px) {
   .container {
     width: 100%;
   }
-
+}
   /* ----------- iPad mini ----------- */
 
   /* Portrait and Landscape */
