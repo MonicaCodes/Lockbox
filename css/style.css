@@ -468,7 +468,7 @@ footer .logo{
     transform: translate(0,0);
     -webkit-transform: translate(0,0); /** Chrome & Safari **/
     -o-transform: translate(0,0); /** Opera **/
-    -mox-transform: translate(0,0); /** Firefox **/
+    -moz-transform: translate(0,0); /** Firefox **/
   }
   .hamburger {
     display:none;
@@ -539,8 +539,9 @@ footer .logo{
   text-align: right;
   float: right;
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
+
 
 /* CONTENT */
 .content {
@@ -580,7 +581,6 @@ footer .logo{
    overflow: hidden;
    padding:20px;
  }
-}
 .items .active {
   background-color: #3498DB;
   display: inline-block;
