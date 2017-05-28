@@ -28,7 +28,7 @@
 	  margin:5px 0 0;
 }
 .menu-settings .dropit-submenu {
-  top: -150px;
+  top: -160px;
 }
 .dropit .dropit-open .dropit-submenu {
   display: block;
@@ -50,7 +50,7 @@
   right: 10px;
  }
  .menu-settings .dropit-open .dropit-submenu:after {
-   top: 125px;
+   top: 138px;
    border-width: 14px 9px 0 9px;
  }
  .dropit .dropit-open .dropit-submenu li {
@@ -69,6 +69,7 @@
   word-spacing: 10px;
   text-align: left;
   display: block;
+  white-space: nowrap;
  }
  .menu-settings .dropit-open.dropit-submenu li a {
    word-spacing: 2px;
